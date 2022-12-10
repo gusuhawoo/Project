@@ -16,10 +16,14 @@ body {
 a {
   text-decoration: none;
 }
+.container {
+  display: flex;
+}
 .squares {
   position: relative;
   width: 400px;
   height: 400px;
+  margin: 40px;
 }
 .squares span {
   position: absolute;
@@ -29,7 +33,16 @@ a {
   border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
   transition: 0.5s;
 }
-.squares:hover span {
+.squares:nth-child(1):hover span {
+  background-color: deeppink;
+  border: none;
+}
+.squares:nth-child(2):hover span {
+  background-color: darkturquoise;
+  border: none;
+}
+.squares:nth-child(3):hover span {
+  background-color: springgreen;
   border: none;
 }
 .squares span:nth-child(1) {
@@ -44,15 +57,12 @@ a {
 }
 .squares:hover span:nth-child(1) {
   opacity: 0.8;
-  background-color: deeppink;
 }
 .squares:hover span:nth-child(2) {
   opacity: 0.5;
-  background-color: darkturquoise;
 }
 .squares:hover span:nth-child(3) {
   opacity: 0.3;
-  background-color: springgreen;
 }
 
 .squares div {
