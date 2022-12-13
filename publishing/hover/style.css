@@ -1,0 +1,53 @@
+/* CSS properties : hover, display, position, opacity */
+/* Google Web Font*/
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #222;
+  line-height: 1.5em;
+  font-weight: 300px;
+  margin: 0;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+.items {
+  text-align: center;
+}
+.item {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border: 1px solid ddd;
+  position: relative;
+  margin: 10px;
+}
+.caption {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-top: 40px;
+  opacity: 0;
+  transform: 0.5s;
+}
+.caption a {
+  color: #fff;
+  background-color: teal;
+  padding: 7px;
+  border-radius: 3px;
+}
+.caption a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.item:hover .caption {
+  opacity: 1;
+}
