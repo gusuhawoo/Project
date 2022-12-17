@@ -1,0 +1,86 @@
+/* CSS properties : hover, position, z-index, overflow, animation */
+/* Google Web Font*/
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  line-height: 1.5em;
+  font-size: 15px;
+  font-weight: 300;
+  background-color: #222;
+  margin: 0;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+.items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.item {
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+}
+.card-img,
+.card-text {
+  position: absolute;
+  transition: 0.5s;
+  top: 0;
+}
+.card-img {
+  text-align: center;
+  background-color: #333;
+  height: inherit;
+  width: 100%;
+  z-index: 1;
+}
+.card-img:hover img {
+  animation: ani 0.5s linear infinite;
+}
+.card-img h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.card-text {
+  background-color: #fff;
+  color: #000;
+  height: inherit;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+}
+.card-text a {
+  background-color: yellowgreen;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.card-text a:hover {
+  background-color: #000;
+}
+.item:hover .card-img {
+  top: -50%;
+}
+.item:hover .card-text {
+  top: 50%;
+  opacity: 1;
+}
+
+@keyframes ani {
+  0%,
+  100% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
