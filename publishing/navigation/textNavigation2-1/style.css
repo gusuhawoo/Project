@@ -1,0 +1,57 @@
+/* CSS properties : flex, before, after, hover, transition, position */
+/* Google Web Font*/
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin: 0;
+  background: linear-gradient(180deg, #dce35b, #45b649);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+.nav {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  padding-bottom: 10px;
+}
+.nav a {
+  width: 80px;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.nav a span {
+  position: absolute;
+  /* display: inline-block; */
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.nav a span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.nav a span:nth-child(2) {
+  top: 100%;
+  left: 0;
+  color: #45b649;
+}
+.nav a:hover span:nth-child(1) {
+  top: -100%;
+}
+.nav a:hover span:nth-child(2) {
+  top: 0;
+}
