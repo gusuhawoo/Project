@@ -1,0 +1,82 @@
+/* CSS properties : keyframes, animation, nth-child, nth-fo-type flex, position */
+/* Google Web Font*/
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5em;
+  margin: 0;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+}
+.skill-progress {
+  width: 500px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.skill-progress h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: normal;
+}
+.item {
+}
+.item p {
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.item p span:first-child {
+  float: left;
+}
+.item p span:last-child {
+  float: right;
+}
+.progress {
+  border: 1px solid #6cd4c4;
+  padding: 5px;
+  border-radius: 3px;
+}
+.progress-level {
+  height: 10px;
+  background: linear-gradient(to right, crimson, gold);
+  animation: ani 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes ani {
+  0% {
+    width: 0;
+  }
+}
+
+.skill-progress .item:nth-of-type(1) .progress-level {
+  animation-delay: 0s;
+}
+.skill-progress .item:nth-of-type(2) .progress-level {
+  animation-delay: 0.2s;
+}
+.skill-progress .item:nth-of-type(3) .progress-level {
+  animation-delay: 0.4s;
+}
+.skill-progress .item:nth-of-type(4) .progress-level {
+  animation-delay: 0.6s;
+}
+.skill-progress .item:nth-of-type(5) .progress-level {
+  animation-delay: 0.8s;
+}
+.skill-progress .item:nth-of-type(6) .progress-level {
+  animation-delay: 1s;
+}
+.skill-progress .item:nth-of-type(7) .progress-level {
+  animation-delay: 1.2s;
+}
