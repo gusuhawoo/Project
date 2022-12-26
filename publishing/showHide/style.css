@@ -1,0 +1,63 @@
+/* CSS properties : input, label, :checked, opacity, transform, nth-child, position */
+/* Google Web Font*/
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin: 0;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+.tab-inner {
+  width: 300px;
+  height: 350px;
+  position: relative;
+}
+input[name='tabmenu'] {
+  display: none;
+}
+.content {
+  display: none;
+}
+.btn {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  border: 20px;
+}
+.btn label {
+  background-color: lightgray;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+input[id='tab1']:checked ~ .slide1 {
+  display: block;
+}
+input[id='tab2']:checked ~ .slide2 {
+  display: block;
+}
+input[id='tab3']:checked ~ .slide3 {
+  display: block;
+}
+input[id='tab1']:checked ~ .btn label[for='tab1'] {
+  background-color: crimson;
+}
+input[id='tab2']:checked ~ .btn label[for='tab2'] {
+  background-color: crimson;
+}
+input[id='tab3']:checked ~ .btn label[for='tab3'] {
+  background-color: crimson;
+}
