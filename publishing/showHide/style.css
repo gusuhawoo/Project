@@ -43,21 +43,13 @@ input[name='tabmenu'] {
   border-radius: 50%;
   cursor: pointer;
 }
-input[id='tab1']:checked ~ .slide1 {
-  display: block;
-}
-input[id='tab2']:checked ~ .slide2 {
-  display: block;
-}
+input[id='tab1']:checked ~ .slide1,
+input[id='tab2']:checked ~ .slide2,
 input[id='tab3']:checked ~ .slide3 {
   display: block;
 }
-input[id='tab1']:checked ~ .btn label[for='tab1'] {
-  background-color: crimson;
-}
-input[id='tab2']:checked ~ .btn label[for='tab2'] {
-  background-color: crimson;
-}
+input[id='tab1']:checked ~ .btn label[for='tab1'],
+input[id='tab2']:checked ~ .btn label[for='tab2'],
 input[id='tab3']:checked ~ .btn label[for='tab3'] {
   background-color: crimson;
 }
