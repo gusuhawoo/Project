@@ -1,0 +1,72 @@
+/* CSS properties : before, after. hover, fontawesome, transition, position */
+/* Google Web Font*/
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin: 0;
+  color: #222;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+.nav {
+}
+.nav a {
+  position: relative;
+  padding-bottom: 10px;
+  display: flex;
+  padding: 10px 0;
+}
+.nav a:before {
+  content: '';
+  position: absolute;
+  background-color: crimson;
+  bottom: 0;
+  transition: 0.3s;
+}
+.nav a:nth-child(1):before {
+  height: 2px;
+  width: 0;
+}
+.nav a:nth-child(2):before {
+  height: 2px;
+  width: 0;
+  right: 0;
+}
+.nav a:nth-child(3):before {
+  height: 4px;
+  width: 4px;
+  left: 0;
+}
+.nav a:nth-child(4):before {
+  height: 1px;
+  width: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav a:nth-child(5):before {
+  height: 1px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav a:nth-child(1):hover:before,
+.nav a:nth-child(2):hover:before,
+.nav a:nth-child(4):hover:before {
+  width: 100%;
+}
+.nav a:nth-child(3):hover:before {
+  left: calc(100% - 4px);
+}
+.nav a:nth-child(5):hover:before {
+  width: 0;
+}
