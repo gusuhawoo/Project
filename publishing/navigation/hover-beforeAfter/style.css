@@ -1,0 +1,57 @@
+/* CSS properties : before, after. hover, fontawesome, transition,
+    position, transform */
+/* Google Web Font*/
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin: 0;
+  background-color: coral;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav {
+}
+.nav a {
+  text-transform: uppercase;
+  position: relative;
+  border: 1px solid red;
+  width: 450px;
+  display: block;
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.nav a:before,
+.nav a:after {
+  content: '';
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 1px solid red;
+  transition: 0.3s;
+}
+.nav a:hover {
+  letter-spacing: 6px;
+}
+.nav a:hover:before {
+  transform: rotate(45deg);
+  background-color: transparent;
+}
+.nav a:hover:after {
+  transform: rotate(-45deg);
+  background-color: transparent;
+}
