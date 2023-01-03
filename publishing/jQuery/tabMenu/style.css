@@ -34,8 +34,6 @@ a {
 .testimonial-section h1 span {
   color: crimson;
 }
-.testimonial-pic {
-}
 .testimonial-pic img {
   width: 100px;
   filter: grayscale(1);
@@ -47,8 +45,6 @@ a {
   border-radius: 50%;
   /* filter: grayscale(0); */
   filter: none;
-}
-.testimonial {
 }
 .testimonial .content {
   display: none;
