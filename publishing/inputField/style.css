@@ -35,26 +35,25 @@ a {
   margin-bottom: 30px;
   font-size: 40px;
 }
-.search input[type='text'] {
-  width: 350px;
+.search input[type='text'],
+.search input[type='submit'] {
   padding: 20px;
   border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+.search input[type='text'] {
+  width: 350px;
   margin-right: -6px;
   border-radius: 40px 0 0 40px;
-  outline: none;
   padding-left: 40px;
-  box-sizing: border-box;
 }
 .search input[type='submit'] {
   width: 150px;
-  padding: 20px;
-  border: none;
   border-radius: 0 40px 40px 0;
   cursor: pointer;
   background-color: orange;
   color: #fff;
-  outline: none;
-  box-sizing: border-box;
 }
 .search input[type='submit']:hover {
   background-color: peru;
