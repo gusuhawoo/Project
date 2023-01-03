@@ -1,0 +1,65 @@
+/* CSS properties : background, before, gradient, placeholder, nagative, margin */
+/* Google Web Font*/
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin: 0;
+  background: url(snow-photo.jpg) no-repeat center center fixed;
+}
+body:before {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+a {
+  text-decoration: none;
+}
+.search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.search h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+.search input[type='text'] {
+  width: 350px;
+  padding: 20px;
+  border: none;
+  margin-right: -6px;
+  border-radius: 40px 0 0 40px;
+  outline: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+.search input[type='submit'] {
+  width: 150px;
+  padding: 20px;
+  border: none;
+  border-radius: 0 40px 40px 0;
+  cursor: pointer;
+  background-color: orange;
+  color: #fff;
+  outline: none;
+  box-sizing: border-box;
+}
+.search input[type='submit']:hover {
+  background-color: peru;
+}
+.search input[type='text']::placeholder {
+  font-size: 20px;
+  font-style: italic;
+}
