@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab Menu - jQuery</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <div class="testimonial-section">
+      <h1><span>Tab Menu</span> jQuery</h1>
+      <div class="testimonial-pic">
+        <img class="active" src="images/face-01.jpg" data-alt="tab1" />
+        <img src="images/face-02.jpg" data-alt="tab2" />
+        <img src="images/face-03.jpg" data-alt="tab3" />
+        <img src="images/face-04.jpg" data-alt="tab4" />
+      </div>
+      <div class="testimonial">
+        <div class="content active" id="tab1">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            laborum quaerat, necessitatibus nisi at debitis cupiditate, ad
+            earum, iste facere ut expedita aspernatur accusamus fugit et facilis
+            aperiam aut inventore. Et eum odit totam eaque libero sequi quasi
+            magni perferendis molestias ut ipsam quo, culpa veniam alias.
+            Doloremque voluptatibus quidem est velit libero ut temporibus quia,
+            commodi alias dolores, facilis error. Beatae ad consequatur vero
+            velit non suscipit fugit voluptatum fuga error accusamus, placeat
+            debitis ratione animi alias deserunt et.
+          </p>
+          <p>Sally, Web Designer</p>
+        </div>
+        <div class="content" id="tab2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum unde
+            facere dolorum, cum quos aut sapiente consequatur perspiciatis quasi
+            perferendis corrupti officiis, exercitationem, voluptatibus corporis
+            iure nostrum maiores beatae est recusandae sunt quod placeat totam?
+            Consequuntur, nam aliquam, possimus neque odio vero ipsum, eveniet
+            mollitia repudiandae aut odit dolore earum! Odio harum, nam eos quis
+            porro veniam officia sit nemo, hic enim qui autem ratione odit?
+            Blanditiis incidunt iste cum. Id, modi. Officiis, vero. Similique,
+            at? Ut ipsa dignissimos ab.
+          </p>
+          <p>Amy, Graphic Designer</p>
+        </div>
+        <div class="content" id="tab3">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perspiciatis dolore ad odit blanditiis optio esse reprehenderit
+            nostrum aut tenetur quam ut facere neque, laboriosam eos quas! Fugit
+            iusto repellendus distinctio molestiae molestias maxime
+            exercitationem error, asperiores, similique inventore sapiente
+            doloremque alias necessitatibus quo, velit veritatis. Esse rerum
+            illo nisi dolorem sequi ipsam placeat corporis rem possimus
+            doloremque doloribus laboriosam laborum animi deserunt, sed
+            excepturi culpa optio distinctio facilis pariatur quae adipisci
+            nemo? Vel consequuntur esse iusto quas alias? Alias, perferendis.
+          </p>
+          <p>Jung Ho, Developer</p>
+        </div>
+        <div class="content" id="tab4">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nemo
+            praesentium placeat sequi exercitationem soluta odio pariatur
+            voluptas reiciendis, quasi voluptatem earum, nisi facere? Provident
+            adipisci voluptatibus quo repudiandae nulla sit explicabo, saepe
+            modi ducimus eos fugit omnis, illo deserunt numquam quasi! Accusamus
+            excepturi magnam consequuntur, numquam qui amet dolorum perferendis
+            itaque esse, facere ipsum nihil illo magni eaque sit explicabo
+            labore, placeat facilis fugit. Tenetur quod, similique modi error
+            ipsum cumque placeat odio tempora labore. Earum ducimus aspernatur
+            voluptatibus.
+          </p>
+          <p>Chris, Printing Designer</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      $('.testimonial-pic img').click(function () {
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        $('.testimonial .content').removeClass('active');
+        $('#' + $(this).attr('data-alt')).addClass('active');
+      });
+    </script>
+  </body>
+</html>
