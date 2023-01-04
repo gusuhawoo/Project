@@ -1,0 +1,33 @@
+/* CSS properties : flex, input[type=text]*/
+/* jQuery properties : var, if, val(), alert()*/
+/* Google Web Font : Montserrat */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  text-align: center;
+}
+.login {
+  border: 1px solid #000;
+  padding: 30px;
+}
+.login input[type='text'],
+.login button {
+  padding: 10px;
+  outline: none;
+}
+.login input[type='text'] {
+  width: 200px;
+}
+.login button {
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}

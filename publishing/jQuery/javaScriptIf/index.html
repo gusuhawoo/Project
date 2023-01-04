@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Verification - jQuery if statement</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Age Verification</h1>
+      <div class="login">
+        <h2>Are you over 20?</h2>
+        <input
+          id="adult"
+          type="text"
+          placeholder="Write your age in numbers."
+        />
+        <button>Adult certification</button>
+      </div>
+    </div>
+    <script>
+      $('.login button').click(function () {
+        var num = $('#adult').val();
+
+        if (num == '') {
+          alert('Please enter your age.');
+        } else if (num < 20) {
+          alert('You are underage.');
+        } else if (num >= 20) {
+          alert('You are an adult.');
+        } else {
+          alert('Please enter a number.');
+        }
+      });
+    </script>
+  </body>
+</html>
