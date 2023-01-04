@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Verification - jQuery Variable</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <div class="star-rating">
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <div class="print">give me a star</div>
+    </div>
+    <script>
+      $('.stars .fa').click(function () {
+        $(this).addClass('active');
+        $(this).prevAll().addClass('active');
+        $(this).nextAll().removeClass('active');
+
+        var num = $(this).index();
+        var starRate = num + 1;
+
+        if (starRate == 1) {
+          $('.print').html('<img src="images/star-lv1.png">' + 'Bad.');
+        } else if (starRate == 2) {
+          $('.print').html('<img src="images/star-lv2.png">' + 'Not good.');
+        } else if (starRate == 3) {
+          $('.print').html('<img src="images/star-lv3.png">' + 'Normal.');
+        } else if (starRate == 4) {
+          $('.print').html('<img src="images/star-lv4.png">' + 'Little good.');
+        } else {
+          $('.print').html('<img src="images/star-lv5.png">' + 'Very good.');
+        }
+      });
+    </script>
+  </body>
+</html>
