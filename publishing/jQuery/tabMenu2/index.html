@@ -11,7 +11,7 @@
   <body>
     <section>
       <div class="heading">
-        <h1>My Skills</h1>
+        <h1><span>My</span> Skills</h1>
         <input type="text" placeholder="What are you looking for?" />
       </div>
       <div class="tab-inner">
@@ -23,11 +23,98 @@
           <li data-alt="tab5">CSS FRAMEWORKS</li>
         </ul>
         <div class="tabs">
-          <div id="tab1" class="active">1</div>
-          <div id="tab2">2</div>
-          <div id="tab3">3</div>
-          <div id="tab4">4</div>
-          <div id="tab5">5</div>
+          <div id="tab1" class="active">
+            <h2>HTML5</h2>
+            <img src="images/platform-logo-01.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. At eos
+              quam, esse cum totam aspernatur. Quod praesentium dolore ut modi
+              delectus magni suscipit facilis perspiciatis voluptas vero
+              architecto vel, aperiam accusantium, maxime hic reiciendis nemo
+              aliquid omnis beatae? Itaque, beatae laudantium dolores earum
+              molestias exercitationem rerum. Similique iusto voluptate odit est
+              eveniet, laudantium reprehenderit numquam dolorum? In iure
+              molestias ut dolorum cumque tenetur laudantium aut ratione,
+              consectetur corporis et, dolor voluptatem porro, impedit odio
+              optio inventore? Repellat, repellendus! Officiis sed animi,
+              exercitationem nihil eveniet fuga delectus laborum cupiditate
+              illum, voluptate dicta et quos magnam vel assumenda alias,
+              provident impedit nemo.
+            </p>
+          </div>
+          <div id="tab2">
+            <h2>CSS3</h2>
+            <img src="images/platform-logo-02.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ex
+              neque sit cupiditate dolorem beatae molestias, sapiente possimus
+              doloribus deserunt nemo rerum error quasi nihil sed tenetur
+              eveniet eos omnis quis inventore hic accusantium. Explicabo,
+              nesciunt id corrupti ad ipsam eveniet quasi nostrum animi, at
+              pariatur natus. Culpa aperiam eligendi animi ipsum placeat facilis
+              excepturi, tempora assumenda fugit nesciunt architecto ullam
+              veniam libero velit voluptas cum amet alias temporibus corrupti
+              veritatis accusamus ducimus iusto dolorum. Nemo, obcaecati.
+              Debitis quos laborum minima quo harum, expedita doloremque
+              exercitationem numquam nam ullam provident nihil adipisci magnam
+              cupiditate eaque recusandae blanditiis! Dolor, tempora iste!
+            </p>
+          </div>
+          <div id="tab3">
+            <h2>JQUERY</h2>
+            <img src="images/platform-logo-03.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              placeat, nisi, iusto fugit architecto quidem autem perferendis
+              eveniet tenetur obcaecati quaerat sequi reiciendis nihil
+              repudiandae fugiat aut quas cum nostrum quo porro, et corporis.
+              Porro illo inventore quo doloribus id vel nesciunt ut? Beatae
+              repellendus animi minus nam fugiat itaque eos fugit. Odio
+              voluptates rerum doloremque? Maxime architecto vel reprehenderit
+              sequi perspiciatis ullam atque possimus ut autem libero quaerat
+              adipisci est, id aut omnis dolores excepturi laborum. Impedit
+              blanditiis cumque earum expedita explicabo dolor enim veniam
+              repellendus, cum voluptates minima ea tempora, error iusto unde
+              commodi, autem doloribus asperiores magni!
+            </p>
+          </div>
+          <div id="tab4">
+            <h2>JAVASCRIPT</h2>
+            <img src="images/platform-logo-04.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad cum
+              numquam recusandae fuga perspiciatis modi voluptate obcaecati,
+              praesentium veritatis a explicabo eum quasi necessitatibus
+              temporibus. Doloribus itaque quasi impedit, rem voluptatem harum!
+              Reprehenderit quia voluptatibus possimus ut dolorum, ipsum vero
+              nisi eius porro in rem dicta aperiam nostrum error exercitationem
+              nobis saepe dignissimos perspiciatis vitae quis id sapiente
+              dolores laudantium deleniti! Eligendi nemo at omnis nam iste
+              ducimus, odit, voluptatum voluptates qui perferendis ipsa eaque
+              natus magnam, voluptas consequuntur ullam dignissimos similique
+              iusto tempora sequi repellendus id provident? Dignissimos
+              accusamus possimus ad numquam, rem sequi id reprehenderit odit
+              tempore reiciendis.
+            </p>
+          </div>
+          <div id="tab5">
+            <h2>CSS FRAMEWORKS</h2>
+            <img src="images/platform-logo-05.png" alt="" />
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+              veritatis quia sint dolores, quasi omnis asperiores laboriosam
+              reiciendis laborum temporibus eveniet nam quod rem fuga optio
+              tempore reprehenderit libero expedita dolorum cum dolore sequi.
+              Earum assumenda iste repellendus debitis tenetur dolore ab
+              consectetur animi, beatae aspernatur quo modi tempore! Autem
+              architecto dolore incidunt eius error. Fugiat obcaecati veritatis
+              soluta aut beatae alias molestiae, ex laudantium dicta autem, quo,
+              voluptatibus veniam at eveniet cumque ducimus? Saepe dolorem, nemo
+              rerum impedit ratione sed quasi tempora possimus quas eos
+              quibusdam eveniet pariatur eligendi similique non nesciunt
+              sapiente. Officiis quia cum eum nesciunt. Adipisci!
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -36,9 +123,9 @@
         $(this).addClass('active');
         $(this).siblings('li').removeClass('active');
 
-        var tab = $(this).attr('data-alt');
+        var result = $(this).attr('data-alt');
         $('.tabs div').removeClass('active');
-        $('#' + tab).addClass('active');
+        $('#' + result).addClass('active');
       });
     </script>
   </body>

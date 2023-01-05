@@ -18,7 +18,6 @@ body {
   height: 100vh;
 }
 section {
-  border: 1px solid #000;
   width: 800px;
 }
 .tab-inner {
@@ -29,6 +28,7 @@ section {
   padding: 0;
   margin: 0;
   overflow: hidden;
+  margin-left: 10px;
 }
 .btn li {
   float: left;
@@ -53,15 +53,52 @@ section {
   background-color: #fff;
   border-top: 2px solid crimson;
 }
-.tabs {
-}
 .tabs div {
   background-color: #fff;
   padding: 20px;
   box-sizing: border-box;
-  height: 250px;
   display: none;
 }
 .tabs div.active {
   display: block;
+}
+/* Tab Content */
+.tabs div h2 {
+  text-align: center;
+}
+.tabs div img {
+  float: left;
+  margin-right: 10px;
+}
+.tabs div p {
+  overflow: hidden;
+}
+/* Heading */
+.heading h1 {
+  font-size: 30px;
+  text-align: center;
+}
+.heading h1 span {
+  color: crimson;
+}
+.heading input[type='text'] {
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  background: #fff url(images/search-icon.png) no-repeat center left 5px;
+  background-size: 23px;
+  padding-left: 30px;
+}
+.heading input[type='text']::placeholder {
+  font-style: italic;
+}
+.heading input[type='text']:focus {
+  background-color: floralwhite;
+}
+.heading input[type='text']:focus::placeholder {
+  /* visibility: hidden; */
+  opacity: 0;
 }
