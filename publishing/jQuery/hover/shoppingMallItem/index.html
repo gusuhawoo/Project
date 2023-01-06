@@ -19,7 +19,7 @@
         <div class="info">
           <div class="size">
             <label>Sizes</label>
-            <span class="active">XS</span>
+            <span>XS</span>
             <span>S</span>
             <span>M</span>
             <span>L</span>
@@ -27,7 +27,7 @@
           </div>
           <div class="color">
             <label>Colors</label>
-            <span class="active"></span>
+            <span></span>
             <span></span>
             <span></span>
             <span></span>
@@ -38,6 +38,14 @@
         <button class="add-cart">Add to Cart</button>
       </div>
     </div>
-    <script></script>
+    <script>
+      $('.size span, .color span').click(function () {
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+      });
+      $('.like').click(function () {
+        $(this).toggleClass('active');
+      });
+    </script>
   </body>
 </html>
