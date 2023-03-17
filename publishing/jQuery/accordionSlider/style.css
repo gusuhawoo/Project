@@ -32,7 +32,6 @@ section {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #eee;
 }
 section article {
   width: 980px;
@@ -59,15 +58,11 @@ section article {
   right: -30px;
   top: -25px;
 }
-.content {
-}
 .content > div {
   width: 50%;
   float: left;
   height: 400px;
   box-sizing: border-box;
-}
-.accordion {
 }
 .title {
   border: 1px solid #ddd;
@@ -107,4 +102,8 @@ section article {
   display: block;
 }
 .image {
+  text-align: right;
+}
+.image img {
+  height: 370px;
 }

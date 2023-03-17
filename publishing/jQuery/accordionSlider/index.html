@@ -20,26 +20,34 @@
         </div>
         <div class="content">
           <div class="accordion">
-            <div class="title active">Lorem ipsum dolor sit amet.</div>
+            <div class="title active" data-image="images/app-capture-01.png">
+              Lorem ipsum dolor sit amet.
+            </div>
             <div class="desc active">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br /><br />
               Pariatur voluptas nihil quod. Tenetur incidunt labore odio
               excepturi molestias numquam laboriosam aliquid quaerat
               perspiciatis sunt!
             </div>
-            <div class="title">Lorem ipsum dolor sit amet.</div>
+            <div class="title" data-image="images/app-capture-02.png">
+              Lorem ipsum dolor sit amet.
+            </div>
             <div class="desc">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br /><br />
               Tempora ea quasi sapiente repellendus dignissimos eveniet ipsam.
               Tenetur aspernatur autem neque velit porro harum libero explicabo.
             </div>
-            <div class="title">Lorem ipsum dolor sit amet.</div>
+            <div class="title" data-image="images/app-capture-03.png">
+              Lorem ipsum dolor sit amet.
+            </div>
             <div class="desc">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br /><br />
               Quaerat ut eligendi, corrupti, fugiat consectetur magnam
               laudantium maxime earum placeat nobis nihil?
             </div>
-            <div class="title">Lorem ipsum dolor sit amet.</div>
+            <div class="title" data-image="images/app-capture-04.png">
+              Lorem ipsum dolor sit amet.
+            </div>
             <div class="desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /><br />
               Perferendis animi impedit alias dolore magni accusantium doloribus
@@ -47,9 +55,20 @@
               Fuga, voluptate?
             </div>
           </div>
-          <div class="image"></div>
+          <div class="image"><img src="images/app-capture-01.png" /></div>
         </div>
       </article>
     </section>
+    <script>
+      $('.title').click(function () {
+        $(this).addClass('active');
+        $(this).siblings('.title').removeClass('active');
+        $(this).siblings('.desc').stop().slideUp();
+        $(this).next().stop().slideDown();
+
+        var dataImage = $(this).attr('data-image');
+        $('.image img').attr('src', dataImage);
+      });
+    </script>
   </body>
 </html>
