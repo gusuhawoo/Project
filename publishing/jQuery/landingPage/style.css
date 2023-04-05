@@ -32,6 +32,8 @@ a {
   width: 700px;
   left: 100px;
   bottom: 100px;
+  animation: showing1 2s 1s linear;
+  animation-fill-mode: both;
 }
 .heading h1 {
   font-size: 60px;
@@ -70,4 +72,45 @@ a {
   background-color: #000;
   color: #fff;
   border-color: #000;
+}
+/* anniversary */
+.anniversary {
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+  color: #000;
+  text-align: center;
+  animation: showing2 1s 3s linear;
+  animation-fill-mode: both;
+}
+.anniversary em {
+  display: block;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin-bottom: -20px;
+}
+.anniversary span {
+  font-family: 'Monoton', sans-serif;
+  font-size: 150px;
+}
+@keyframes showing1 {
+  0% {
+    opacity: 0;
+    margin-left: -100px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+@keyframes showing2 {
+  0% {
+    opacity: 0;
+    margin-right: -100px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
 }
