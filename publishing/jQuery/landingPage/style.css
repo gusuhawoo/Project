@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+@import url('http://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+body {
+  margin: 0;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+/* background video */
+.video-frame {
+}
+.video-frame video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+/* logo */
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+/* heading */
+.heading {
+  position: absolute;
+  width: 700px;
+  left: 100px;
+  bottom: 100px;
+}
+.heading h1 {
+  font-size: 60px;
+  margin: 0;
+}
+.heading h1 span {
+  display: block;
+  color: crimson;
+}
+.heading p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+.btn-book,
+.btn-learn {
+  text-transform: uppercase;
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+  padding: 7px;
+  border-radius: 20px;
+  margin-right: 5px;
+  border: 2px solid #fff;
+  transition: 0.3s;
+}
+.btn-book {
+  background-color: #fff;
+  color: #222;
+}
+.btn-learn {
+  background-color: transparent;
+  color: #fff;
+}
+.btn-book:hover,
+.btn-learn:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
