@@ -7,25 +7,30 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
+
 a {
   text-decoration: none;
   color: #000;
 }
+
 /* background video */
 .video-frame {
 }
+
 .video-frame video {
   position: fixed;
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
 }
+
 /* logo */
 .logo {
   position: absolute;
   top: 50px;
   left: 100px;
 }
+
 /* heading */
 .heading {
   position: absolute;
@@ -35,18 +40,22 @@ a {
   animation: showing1 2s 1s linear;
   animation-fill-mode: both;
 }
+
 .heading h1 {
   font-size: 60px;
   margin: 0;
 }
+
 .heading h1 span {
   display: block;
   color: crimson;
 }
+
 .heading p {
   font-size: 1.2em;
   line-height: 1.5em;
 }
+
 .btn-book,
 .btn-learn {
   text-transform: uppercase;
@@ -59,20 +68,24 @@ a {
   border: 2px solid #fff;
   transition: 0.3s;
 }
+
 .btn-book {
   background-color: #fff;
   color: #222;
 }
+
 .btn-learn {
   background-color: transparent;
   color: #fff;
 }
+
 .btn-book:hover,
 .btn-learn:hover {
   background-color: #000;
   color: #fff;
   border-color: #000;
 }
+
 /* anniversary */
 .anniversary {
   position: absolute;
@@ -83,6 +96,7 @@ a {
   animation: showing2 1s 3s linear;
   animation-fill-mode: both;
 }
+
 .anniversary em {
   display: block;
   font-style: normal;
@@ -90,10 +104,42 @@ a {
   letter-spacing: 5px;
   margin-bottom: -20px;
 }
+
 .anniversary span {
   font-family: 'Monoton', sans-serif;
   font-size: 150px;
 }
+
+/* Trigger */
+.trigger {
+  width: 40px;
+  height: 20px;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  cursor: pointer;
+}
+
+.trigger span {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+
+.trigger span:nth-child(1) {
+  top: 0;
+}
+
+.trigger span:nth-child(2) {
+  top: 50%;
+  width: 80%;
+}
+
+.trigger span:nth-child(3) {
+  top: 100%;
+}
+
 @keyframes showing1 {
   0% {
     opacity: 0;
@@ -104,6 +150,7 @@ a {
     margin-left: 0px;
   }
 }
+
 @keyframes showing2 {
   0% {
     opacity: 0;
