@@ -38,7 +38,7 @@
         <em>Anniversary</em>
         <span>60</span>
       </div>
-      <div class="trigger">
+      <div class="trigger active">
         <span></span>
         <span></span>
         <span></span>
@@ -53,5 +53,11 @@
         </div>
       </div>
     </div>
+    <script>
+      $('.trigger').click(function () {
+        $(this).toggleClass('active');
+        $('.modal-gnb').fadeToggle();
+      });
+    </script>
   </body>
 </html>
