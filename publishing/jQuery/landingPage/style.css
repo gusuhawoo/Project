@@ -10,11 +10,17 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
 }
 
 /* background video */
-.video-frame {
+.video-frame:before {
+  content: '';
+  background: linear-gradient(-135deg, bisque, transparent);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .video-frame video {
@@ -58,6 +64,8 @@ a {
 
 .btn-book,
 .btn-learn {
+  background-color: #fff;
+  color: #222;
   text-transform: uppercase;
   width: 150px;
   display: inline-block;
@@ -70,8 +78,6 @@ a {
 }
 
 .btn-book {
-  background-color: #fff;
-  color: #222;
 }
 
 .btn-learn {
@@ -79,11 +85,14 @@ a {
   color: #fff;
 }
 
-.btn-book:hover,
-.btn-learn:hover {
+.btn-book:hover {
   background-color: #000;
   color: #fff;
   border-color: #000;
+}
+.btn-learn:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 /* anniversary */
@@ -161,12 +170,13 @@ a {
 }
 
 .modal-gnb {
-  background-color: #000;
-  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  display: none;
 }
 
 .gnb {
