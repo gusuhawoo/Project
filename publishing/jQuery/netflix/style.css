@@ -1,0 +1,142 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+/* XEICON CDN  */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  line-height: 1.6em;
+  font-size: 26px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Header */
+header {
+  overflow: hidden;
+  padding: 35px 55px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  width: 170px;
+}
+
+.signin {
+  float: right;
+}
+
+.signin button {
+  background-color: crimson;
+  border: none;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 15px;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Section */
+.welcome {
+  height: 80vh;
+  background: url(images/welcome-background.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.welcome:before {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Heading */
+.heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 800px;
+}
+
+.heading h1 {
+  font-size: 64px;
+  line-height: 1.2em;
+  margin: 0;
+}
+
+.heading h5 {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.heading p {
+  font-size: 20px;
+}
+
+.getstarted {
+  position: relative;
+  display: inline-block;
+}
+
+.getstarted input[type='email'],
+.getstarted button {
+  height: 60px;
+  outline: none;
+  border: none;
+  vertical-align: middle;
+}
+
+.getstarted input[type='email'] {
+  width: 450px;
+  margin-right: -6px;
+  font-size: 18px;
+  padding-left: 18px;
+}
+
+.getstarted input[type='email'] + span {
+  color: #999;
+  font-size: 16px;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.getstarted input[type='email']:focus + span {
+  font-weight: bold;
+  transform: translateY(-15px);
+}
+
+.getstarted button {
+  width: 220px;
+  background-color: crimson;
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+}
