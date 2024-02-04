@@ -140,3 +140,47 @@ header {
   font-size: 26px;
   cursor: pointer;
 }
+
+/* Common CSS */
+section {
+  border-bottom: 10px solid #333;
+  position: relative;
+}
+
+/* Section */
+.enjoy,
+.download,
+.watch,
+.create {
+  height: 500px;
+}
+.inner {
+  width: 1150px;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.desc,
+.preview {
+  float: left;
+  width: 50%;
+}
+.desc {
+  padding-top: 40px;
+}
+
+.desc h2 {
+  font-size: 50px;
+  line-height: 1.2em;
+}
+
+.preview {
+  text-align: center;
+}
+
+.preview img {
+  height: 350px;
+}
