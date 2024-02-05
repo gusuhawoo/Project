@@ -242,3 +242,44 @@ input[name='faq-item']:checked + label + .faq-content {
 input[name='faq-item']:checked + label span {
   transform: rotate(45deg);
 }
+
+/* Footer */
+footer {
+  padding: 50px 0;
+  font-size: 12px;
+  color: #777;
+  line-height: 1.5em;
+}
+
+.footer-inner {
+  width: 850px;
+  margin: auto;
+}
+
+.sitemap {
+  border-bottom: 1px solid #222;
+  padding-bottom: 20px;
+}
+
+.sitemap h6 {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.items {
+  display: inline-block;
+  width: 24%;
+  vertical-align: top;
+  line-height: 2em;
+}
+
+.items a {
+  color: #777;
+  display: block;
+}
+
+.items a:hover {
+  text-decoration: underline;
+}
