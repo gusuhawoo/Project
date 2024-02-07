@@ -17,6 +17,10 @@ body {
   font-size: 26px;
 }
 
+body.active {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -48,7 +52,7 @@ header {
   border: none;
   color: #fff;
   padding: 7px 15px;
-  border-radius: 15px;
+  border-radius: 5px;
   text-transform: capitalize;
   cursor: pointer;
   font-size: 18px;
@@ -293,11 +297,12 @@ footer {
   top: 0;
   left: 0;
   z-index: 100;
+  display: none;
 }
 
 .login {
   width: 450px;
-  height: 500px;
+  height: 600px;
   position: absolute;
   top: 50%;
   left: 50%;
